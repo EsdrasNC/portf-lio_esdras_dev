@@ -1,8 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.inria-sans-bold {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+h1{
+  font-size: 70px;
+  background-size: cover;
+  background-clip: text;
+}
+p{
+  margin-left: 50px;
+  margin-right: 300px;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 20px;
-  overflow-x: hidden;
+  font-family: "Inria Sans", sans-serif;
+  position: relative;
+  
 }
 .global_container {
   min-height: calc(100vh - 40px);
@@ -15,40 +38,61 @@ body {
   width: 100%;
   height: 30px;
   position: relative;
-  background: #926645;
   overflow: hidden;
 }
 .espaçamento_02 {
   width: 100%;
   height: 110px;
   position: relative;
-  background: #926645;
   overflow: hidden;
   padding-top: 70px;
 }
 .espaçamento_03 {
   width: 100%;
-  height: 90px;
+  height: 50px;
   position: relative;
-  background: #926645;
   overflow: hidden;
 }
-/*====  conteúdos ============================ */
+/*====  nav bar ============================ */
 .nav_bar {
   position: fixed;
   top: 60;
   left: 20px;
   right: 20px;
   height: 70px;
-  background: #4dff17;
+
   z-index: 1;
   box-sizing: border-box;
 }
+#nav_bar_two_parts{
+  display: flex;
+  align-items: center;
+}
+.logo_leres{
+  width: 110px;
+  height: 52px;
+  margin: 13px;
+}
+.linha-vertical {
+  width: 2px;
+  height: 40px;
+  background-color: black;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-bottom: 7px;
+}
+#log{
+  font-family: "Inria Sans", sans-serif;
+animation: blink 1s step-end infinite;
+font-weight: bold;
+margin-left: 10px;
+margin-bottom: 5px;
+}
+/*====  info container ============================ */
 .info_container {
   width: 70%;
   height: 400vh;
   position: relative;
-  background: #c76114;
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
@@ -57,32 +101,70 @@ body {
   display: flex;
   flex-direction: column;
 }
+/*====  apresentação ============================ */
 .info_apresentação {
   width: 100%;
   height: 300px;
   position: relative;
   top: 0;
   left: 0;
-  background: #4dff17;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: url(../imagens/background/Prancheta%2055.png) no-repeat center center; /* Insira o caminho da sua imagem aqui */
+  background-size: 1000px;
+  overflow: hidden; 
 }
+.text_1{
+  padding-left: 50px;
+  position: relative;
+  z-index: 2;
+}
+.style_text_1{
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 2;
+  position: relative;
+}
+.style_text_2{
+  margin-top: 0px;
+  z-index: 2;
+  position: relative;
+} 
+/*====  SCROLL ============================ */
 .scroll_container {
   width: 100%;
   height: 300px;
   position: relative;
-  background: #4dff17;
   overflow: hidden;
 }
+.roll_down{
+  margin-left: 50px;
+}
+.linha-vertical_2{
+  width: 1px;
+  height: 200px;
+  background-color: black;
+  margin-left: 100px;
+  margin-right: 10px;
+  margin-bottom: 7px;
+}
+/*==== together  ============================ */
 .job_togther_container {
   width: 100%;
   height: 400px;
   position: relative;
-  background: #4dff17;
   overflow: hidden;
 }
+.style_text_3{
+  font-size: 50px;
+  margin-left: 50px;
+}
+/*====   ============================ */
+
 .jobs_container {
   width: 100%;
-  height: 400px;
+  height: 300px;
   position: relative;
   background: #4dff17;
   overflow: hidden;
