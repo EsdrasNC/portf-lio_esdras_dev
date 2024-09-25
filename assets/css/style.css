@@ -224,12 +224,6 @@ body {
     margin-left: 50px;
     margin-right: 150px;
   }
-  .espaçamento_03 {
-    width: 100%;
-    height: 30px;
-    position: relative;
-    overflow: hidden;
-  }
   h2 {
     font-size: 30px;
     background-size: cover;
@@ -238,6 +232,14 @@ body {
     margin-top: 50px;
     margin-bottom: 0;
   }
+  /*====  espaçamento  ============================ */
+  .espaçamento_03 {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+  } /*====  container  ============================ */
+
   .info_container {
     width: 60%;
     height: 530vh;
@@ -249,7 +251,8 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-  }
+  } /*====  jobs  ============================ */
+
   .imagens_icones {
     width: 150px;
     padding: 0px 50px 0px 120px;
@@ -273,6 +276,163 @@ body {
     height: 370px;
     position: relative;
     overflow: hidden;
+  }
 }
-}
+/* Estilos específicos para celulares */
+@media (max-width: 768px) {
+  p {
+    width: 86%;
+    height: 57px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin: 25px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 30px;
+    background-size: cover;
+    background-clip: text;
+    margin-left: 110px;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  /*====  container  ============================ */
+  .info_container {
+    width: 100%;
+    height: 530vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  /*====  espaçamento  ============================ */
+  .espaçamento_02 {
+    padding: 0;
+    width: 100%;
+    height: 50px;
+  }
+  /*====  text  ============================ */
+  .text_1 {
+    padding-left: 0px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
 
+  /*====  nav bar  ============================ */
+  .nav_bar {
+    position: relative;
+    top: 80;
+    left: 40px;
+    right: 20px;
+    height: 70px;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  /*====  nav bar  ============================ */
+  .info_apresentação {
+    width: 150%;
+    height: 490px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: url(../imagens/background/Prancheta%2055.png) no-repeat center
+      center;
+    background-size: 1005px;
+    overflow: hidden;
+  }
+  /*====  roll down  ============================ */
+  .roll_down {
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .linha-vertical_2 {
+    width: 1px;
+    height: 207px;
+    background-color: black;
+    margin-left: 170px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+  }
+
+  /*====  job_juntos ============================ */
+  .job_togther_container {
+    width: 100%;
+    height: 410px;
+    position: relative;
+    overflow: hidden;
+}
+  .style_text_3 {
+    font-size: 30px;
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  /*====  info jobs ============================ */
+  .info_jobs {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  /*====  controle cards ============================ */
+  .jobs_container {
+    width: 110%;
+    height: 720px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+  }
+  #controle_geral_infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    text-align: justify;
+  }
+  .title_job {
+    margin: 0;
+    padding-bottom: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .info_jobs_icon {
+    height: 81%;
+    width: 84%;
+    /* margin: 45px; */
+    margin-top: 0;
+    padding: 30px;
+    font-size: 15px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+  }
+  /*====  direitos dev  ============================ */
+
+  .direitos_dev {
+    display: flex;
+    position: relative;
+    transform: rotate(0deg);
+    margin-left: 0px;
+    top: 90%;
+    left: 20px;
+    font-size: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
